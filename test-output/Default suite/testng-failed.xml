@@ -6,8 +6,6 @@
       <class name="testng.LoginTest">
         <methods>
           <include name="LoginTestcase1"/>
-          <include name="TearDown"/>
-          <include name="Setup"/>
         </methods>
       </class> <!-- testng.LoginTest -->
     </classes>

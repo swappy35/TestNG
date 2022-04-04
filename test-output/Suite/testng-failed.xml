@@ -2,10 +2,10 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <parameter name="param1" value="pal35swapnil35@fsd.com"/>
-  <parameter name="param2" value="pqr@123"/>
+  <parameter name="param2" value="pqr@123546436Q"/>
   <test name="Test(failed)">
     <parameter name="param1" value="pal35swapnil35@fsd.com"/>
-    <parameter name="param2" value="pqr@123"/>
+    <parameter name="param2" value="pqr@123546436Q"/>
     <groups>
       <run>
         <include name="Sanity"/>

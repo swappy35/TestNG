@@ -3,7 +3,7 @@
 <suite name="Suite">
   <test name="Test">
   	<parameter name="param1" value="pal35swapnil35@fsd.com" />
-  	<parameter name="param2" value="pqr@123546436Q" />
+  	<parameter name="param2" value="pqr@123546436Qy" />
   	<groups>
   		<run>
   			<include name="Sanity"/>

@@ -17,51 +17,46 @@ import org.testng.annotations.Test;
 
 public class LoginTest {
 
-	WebDriver driver2;
+	WebDriver driver;
 	
 	@BeforeMethod(alwaysRun=true)
 	public void Setup() throws InterruptedException{
 		//SETUP FOR WEBDRIVER
 		System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
-		System.setProperty("webdriver.gecko.driver", "geckodriver.exe");
 		
 		//DRIVER OBJECT
-//		driver = new ChromeDriver();
-		driver2 = new FirefoxDriver();
+		driver = new ChromeDriver();
 		
 		//EXAMPLE SITE OPENING
-//		driver.get("https://www.simplilearn.com/");
-		driver2.get("https://www.simplilearn.com/");
+		driver.get("https://www.simplilearn.com/");
 		
 		//MAXIMING WINDOW SIZE
-//		driver.manage().window().maximize();
-		driver2.manage().window().maximize();
+		driver.manage().window().maximize();
 		
 		//TIMEOUT SO THAT THE SELENIUM CAN FIND THE OTHER LINE TO EXECUTE COMMING NEXT
-//		driver.manage().timeouts().implicitlyWait(5000, TimeUnit.MILLISECONDS);
-		driver2.manage().timeouts().implicitlyWait(5000, TimeUnit.MILLISECONDS);
+		driver.manage().timeouts().implicitlyWait(5000, TimeUnit.MILLISECONDS);
 		
-		Thread.sleep(10000);
+//		Thread.sleep(10000);
 	}
 	@Parameters({"param1", "param2"})
 	@Test(groups = {"Sanity"})
 	public void LoginTestcase1(String UserNameVal, String PasswordVal){
-		WebElement LoginLink = driver2.findElement(By.linkText("Log in"));
+		WebElement LoginLink = driver.findElement(By.linkText("Log in"));
 		LoginLink.click();
 		
-		WebElement EmailId = driver2.findElement(By.name("user_login"));
+		WebElement EmailId = driver.findElement(By.name("user_login"));
 		EmailId.sendKeys(UserNameVal);
 		
-		WebElement Pass = driver2.findElement(By.name("user_pwd"));
+		WebElement Pass = driver.findElement(By.name("user_pwd"));
 		Pass.sendKeys(PasswordVal);
 		
-		WebElement RememberMe = driver2.findElement(By.className("rememberMe"));
+		WebElement RememberMe = driver.findElement(By.className("rememberMe"));
 		RememberMe.click();
 		
-		WebElement LoginButton = driver2.findElement(By.name("btn_login"));
+		WebElement LoginButton = driver.findElement(By.name("btn_login"));
 		LoginButton.click();
 		
-		WebElement ErrorMsg = driver2.findElement(By.id("msg_box"));
+		WebElement ErrorMsg = driver.findElement(By.id("msg_box"));
 		
 		String ActMsg = ErrorMsg.getText();
 		String ExpMsg = "The email or password you have entered is invalid.";
@@ -71,7 +66,7 @@ public class LoginTest {
 		
 		Assert.assertEquals(ActMsg, ExpMsg);
 		
-		List<WebElement> Links = driver2.findElements(By.tagName("a"));
+		List<WebElement> Links = driver.findElements(By.tagName("a"));
 		System.out.println("Total count of Links: "+Links.size());
 		
 		for(int i=0; i<Links.size(); i++){
@@ -83,7 +78,7 @@ public class LoginTest {
 	
 	@AfterMethod(alwaysRun=true)
 	public void TearDown(){
-		driver2.close();
+		driver.close();
 	}
 
 }
