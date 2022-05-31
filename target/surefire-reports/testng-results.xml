@@ -2,7 +2,7 @@
 <testng-results skipped="0" failed="0" ignored="2" total="5" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="28379" started-at="2022-04-02T16:59:10Z" finished-at="2022-04-02T16:59:39Z">
+  <suite name="Suite" duration-ms="11222" started-at="2022-04-04T14:25:08Z" finished-at="2022-04-04T14:25:19Z">
     <groups>
       <group name="Sanity">
         <method signature="CardTest.CreditCardTest()[pri:0, instance:testng.CardTest@97e1986]" name="CreditCardTest" class="testng.CardTest"/>
@@ -10,19 +10,19 @@
         <method signature="LoginTest.LoginTestcase1(java.lang.String, java.lang.String)[pri:0, instance:testng.LoginTest@153f5a29]" name="LoginTestcase1" class="testng.LoginTest"/>
       </group> <!-- Sanity -->
     </groups>
-    <test name="Test" duration-ms="28379" started-at="2022-04-02T16:59:10Z" finished-at="2022-04-02T16:59:39Z">
+    <test name="Test" duration-ms="11222" started-at="2022-04-04T14:25:08Z" finished-at="2022-04-04T14:25:19Z">
       <class name="testng.CardTest">
-        <test-method status="PASS" signature="CreditCardTest()[pri:0, instance:testng.CardTest@97e1986]" name="CreditCardTest" duration-ms="3" started-at="2022-04-02T16:59:10Z" finished-at="2022-04-02T16:59:10Z">
+        <test-method status="PASS" signature="CreditCardTest()[pri:0, instance:testng.CardTest@97e1986]" name="CreditCardTest" duration-ms="3" started-at="2022-04-04T14:25:08Z" finished-at="2022-04-04T14:25:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CreditCardTest -->
       </class> <!-- testng.CardTest -->
       <class name="testng.LoginTest">
-        <test-method status="PASS" signature="Setup()[pri:0, instance:testng.LoginTest@153f5a29]" name="Setup" is-config="true" duration-ms="16551" started-at="2022-04-02T16:59:10Z" finished-at="2022-04-02T16:59:27Z">
+        <test-method status="PASS" signature="Setup()[pri:0, instance:testng.LoginTest@153f5a29]" name="Setup" is-config="true" duration-ms="3699" started-at="2022-04-04T14:25:08Z" finished-at="2022-04-04T14:25:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method status="PASS" signature="LoginTestcase1(java.lang.String, java.lang.String)[pri:0, instance:testng.LoginTest@153f5a29]" name="LoginTestcase1" duration-ms="10425" started-at="2022-04-02T16:59:27Z" finished-at="2022-04-02T16:59:37Z">
+        <test-method status="PASS" signature="LoginTestcase1(java.lang.String, java.lang.String)[pri:0, instance:testng.LoginTest@153f5a29]" name="LoginTestcase1" duration-ms="7437" started-at="2022-04-04T14:25:12Z" finished-at="2022-04-04T14:25:19Z">
           <params>
             <param index="0">
               <value>
@@ -31,20 +31,20 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[pqr@123546436Q]]>
+                <![CDATA[pqr@123546436Qy]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginTestcase1 -->
-        <test-method status="PASS" signature="TearDown()[pri:0, instance:testng.LoginTest@153f5a29]" name="TearDown" is-config="true" duration-ms="1382" started-at="2022-04-02T16:59:37Z" finished-at="2022-04-02T16:59:39Z">
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:testng.LoginTest@153f5a29]" name="TearDown" is-config="true" duration-ms="70" started-at="2022-04-04T14:25:19Z" finished-at="2022-04-04T14:25:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
       </class> <!-- testng.LoginTest -->
       <class name="testng.LoanTest">
-        <test-method status="PASS" signature="HomeLoanTest()[pri:0, instance:testng.LoanTest@26f67b76]" name="HomeLoanTest" duration-ms="0" started-at="2022-04-02T16:59:10Z" description="This test is for Home Loan" finished-at="2022-04-02T16:59:10Z">
+        <test-method status="PASS" signature="HomeLoanTest()[pri:0, instance:testng.LoanTest@26f67b76]" name="HomeLoanTest" duration-ms="0" started-at="2022-04-04T14:25:08Z" description="This test is for Home Loan" finished-at="2022-04-04T14:25:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- HomeLoanTest -->
