@@ -15,7 +15,7 @@ import com.amazonaws.services.s3.model.Region;
 public class S3Operations {
 
 	public static void main(String[] args) {
-		AWSCredentials credentials = new BasicAWSCredentials("AKIA3H4BN4DJJWQIQBGZ", "plg96oMT2jEryj8jjMzmR4eVE8v2LNGzipKZutk5");
+		AWSCredentials credentials = new BasicAWSCredentials("**************", "**********************");
 		
 		AmazonS3 s3client = AmazonS3ClientBuilder
 				.standard()
